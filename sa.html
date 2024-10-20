@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Seat Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Theatre Seat Selection</h1>
+        <div class="info">
+            <p>Regular Seat: <span class="seat-price" data-price="10">$10</span></p>
+            <p>Premium Seat: <span class="seat-price premium" data-price="15">$15</span></p>
+            <p>VIP Seat: <span class="seat-price vip" data-price="20">$20</span></p>
+        </div>
+        <div class="seat-map"></div>
+        <p>Selected seats: <span id="selected-seats"></span></p>
+        <p>Number of selected seats: <span id="seat-count">0</span></p>
+        <p>Total Price: <span id="total-price">$0</span></p>
+        <button id="confirm-tickets">Confirm Tickets</button>
+        <button id="reset-seats">Reset Selection</button>
+        <div id="confirmation" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
